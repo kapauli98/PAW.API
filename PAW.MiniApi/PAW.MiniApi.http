@@ -1,0 +1,42 @@
+﻿@PAW.MiniApi_HostAddress = https://localhost:7128
+
+POST {{PAW.MiniApi_HostAddress}}/tasks
+
+
+###
+
+GET {{PAW.MiniApi_HostAddress}}/tasks/1
+
+###
+
+PUT {{PAW.MiniApi_HostAddress}}/tasks/1
+Content-Type: application/json
+{
+  "Name": "Paola", 
+  "Description": "Hola", 	
+  "Status": "Pending" 
+}
+
+###
+
+DELETE {{PAW.MiniApi_HostAddress}}/tasks/1
+
+###
+
+GET {{PAW.MiniApi_HostAddress}}/tasks
+
+###
+
+POST {{PAW.MiniApi_HostAddress}}/tasks
+Content-Type: application/json
+
+{
+  "name": "Nueva Tarea",
+  "description": "Descripción de la tarea",
+  "status": "Pendiente",
+  "dueDate": "2024-12-31T23:59:59",
+  "createdAt": "2024-11-01T10:00:00",
+  "lastModified": "2024-11-01T10:00:00",
+  "modifiedBy": "UsuarioAdmin"
+}
+###
