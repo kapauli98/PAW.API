@@ -1,4 +1,4 @@
-@PAW.API_HostAddress = http://localhost:5173
+@PAW.API_HostAddress = http://localhost:7270
 
 GET {{PAW.API_HostAddress}}/weatherforecast/
 Accept: application/json
