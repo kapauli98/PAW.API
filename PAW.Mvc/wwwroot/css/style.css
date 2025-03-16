@@ -30,7 +30,8 @@ body {
         --grey-color: #f2f2f2;
         --grey-color-light: #aaa;
     }
-/* navbar */
+
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -41,7 +42,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    z-index: 1000;
+    z-index: 1000; /* Asegúrate de que el navbar esté por encima */
     box-shadow: 0 0 2px var(--grey-color-light);
 }
 
@@ -89,7 +90,8 @@ body {
         font-size: 20px;
         color: var(--grey-color);
     }
-/* sidebar */
+
+/* Sidebar */
 .sidebar {
     background-color: var(--white-color);
     width: 260px;
@@ -98,7 +100,7 @@ body {
     left: 0;
     height: 100%;
     padding: 80px 20px;
-    z-index: 100;
+    z-index: 999; /* Asegúrate de que el sidebar esté por encima del main-content */
     overflow-y: scroll;
     box-shadow: 0 0 1px var(--grey-color-light);
     transition: all 0.5s ease;
@@ -107,6 +109,7 @@ body {
     .sidebar.close {
         padding: 60px 0;
         width: 80px;
+        left: 0; /* Asegúrate de que el sidebar colapsado no se superponga con el navbar */
     }
 
     .sidebar::-webkit-scrollbar {
@@ -302,5 +305,26 @@ body {
 
     .sidebar.close .bottom_content {
         left: -100%;
+    }
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 100px; /* Más espacio arriba */
+    margin-left: 280px; /* Más espacio a la izquierda */
+    padding: 25px; /* Más espacio interno */
+    transition: all 0.5s ease; /* Para animar el cambio cuando el sidebar se colapse */
+    z-index: 1; /* Asegúrate de que el main-content esté por debajo del navbar y sidebar */
+    color: var(--grey-color);
+}
+
+.sidebar.close ~ .main-content {
+    margin-left: 100px; /* Más espacio a la izquierda cuando el sidebar está colapsado */
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* En móviles, el contenido ocupa todo el ancho */
+        margin-top: 80px; /* Ajusté el margen superior para móviles */
     }
 }
