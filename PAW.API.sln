@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAW.Repositories", "PAW.Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.MiniApi", "PAW.MiniApi\PAW.MiniApi.csproj", "{EE0CAF97-D108-4851-8434-7C5241F59B2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Factory", "PAW.Factory\PAW.Factory.csproj", "{28F8B9D4-BE6B-4112-697A-C7B61DEF996F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.FactoryTests", "PAW.FactoryTests\PAW.FactoryTests.csproj", "{34E4AFAE-8845-9B92-DDC6-A58F359348C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{EE0CAF97-D108-4851-8434-7C5241F59B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE0CAF97-D108-4851-8434-7C5241F59B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE0CAF97-D108-4851-8434-7C5241F59B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F8B9D4-BE6B-4112-697A-C7B61DEF996F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F8B9D4-BE6B-4112-697A-C7B61DEF996F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F8B9D4-BE6B-4112-697A-C7B61DEF996F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F8B9D4-BE6B-4112-697A-C7B61DEF996F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E4AFAE-8845-9B92-DDC6-A58F359348C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E4AFAE-8845-9B92-DDC6-A58F359348C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E4AFAE-8845-9B92-DDC6-A58F359348C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E4AFAE-8845-9B92-DDC6-A58F359348C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
